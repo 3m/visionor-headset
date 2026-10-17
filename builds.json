@@ -1,5 +1,12 @@
 [
   {
+    "number": 152,
+    "version": "3.1",
+    "message": "Show the headset's log on the iPad, and say why sharing waits (#130)",
+    "date": "2026-10-17T18:23:09.854Z",
+    "commit": "ab37191"
+  },
+  {
     "number": 150,
     "version": "3.1",
     "message": "Bundle the demo videos in headset builds (#129)",
