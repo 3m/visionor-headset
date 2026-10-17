@@ -1,5 +1,12 @@
 [
   {
+    "number": 146,
+    "version": "3.1",
+    "message": "Add a Presenter dashboard, Demo and Vision toggles, and full screen on iPad (#127)",
+    "date": "2026-10-17T16:51:16.213Z",
+    "commit": "1165660"
+  },
+  {
     "number": 143,
     "version": "3.1",
     "message": "Keep the Vision toggle beside Demo above the main window (#126)",
