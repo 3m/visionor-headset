@@ -1,5 +1,12 @@
 [
   {
+    "number": 153,
+    "version": "3.1",
+    "message": "Collapse the main window in the life-size OR (#131)",
+    "date": "2026-10-17T20:13:16.236Z",
+    "commit": "d474ae3"
+  },
+  {
     "number": 152,
     "version": "3.1",
     "message": "Show the headset's log on the iPad, and say why sharing waits (#130)",
