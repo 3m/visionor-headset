@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Vision OR headset builds</title>
+<style>
+  :root { --bg: #0e0f10; --card: #17191b; --line: #26292c; --ink: #f2f3f4; --muted: #9aa0a6; --accent: #34c38f; --accent-ink: #06231a; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.45 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 30px; margin: 0 0 8px; letter-spacing: -0.01em; }
+  .lead { color: var(--muted); margin: 0 0 28px; }
+  ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  .build { display: flex; align-items: center; gap: 16px; background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 18px 18px 18px 22px; }
+  .info { flex: 1; min-width: 0; }
+  .title { font-weight: 650; font-size: 19px; display: flex; align-items: center; gap: 10px; }
+  .badge { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 2px 8px; }
+  .meta { color: var(--muted); font-size: 14px; margin-top: 2px; }
+  .change { margin-top: 6px; font-size: 15px; overflow-wrap: anywhere; }
+  .install { flex: none; background: var(--accent); color: var(--accent-ink); font-weight: 700; text-decoration: none; padding: 16px 28px; border-radius: 999px; min-width: 120px; text-align: center; }
+  .empty { color: var(--muted); }
+  .help { margin-top: 36px; color: var(--muted); font-size: 15px; }
+  .help h2 { color: var(--ink); font-size: 17px; margin: 0 0 6px; }
+  .help p { margin: 0 0 8px; }
+  @media (max-width: 520px) { .build { flex-direction: column; align-items: stretch; } .install { width: 100%; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Vision OR headset builds</h1>
+  <p class="lead">Open this page in Safari on your Vision Pro and tap Install. These builds include the Room Camera and the real room in Full View Broadcast. Vision's voice features are off in them.</p>
+  <ol>{{builds}}
+  </ol>
+  <div class="help">
+    <h2>If Install doesn't work</h2>
+    <p>Builds install only on Vision Pros registered with the Vision OR team. Ask Trey to register yours, then install a build made after that.</p>
+    <p>visionOS shows a prompt before installing. If nothing appears, wait a few seconds and tap Install again.</p>
+  </div>
+</main>
+</body>
+</html>
