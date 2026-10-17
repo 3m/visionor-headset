@@ -28,7 +28,8 @@ jobs:
         run: python3 publish.py
       - name: Commit the page
         run: |
-          git add -A builds.json index.html manifests
+          git add -A builds.json index.html
+          [ -d manifests ] && git add -A manifests
           if git diff --cached --quiet; then
             echo "No new builds."
             exit 0

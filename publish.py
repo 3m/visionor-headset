@@ -133,6 +133,7 @@ def render(builds: list[dict]) -> str:
 
 
 def main() -> None:
+    (ROOT / "manifests").mkdir(exist_ok=True)
     builds = json.loads(BUILDS.read_text()) if BUILDS.exists() else []
     published = {b["number"] for b in builds}
     token = asc_token()
@@ -157,7 +158,6 @@ def main() -> None:
             subprocess.run(["gh", "release", "create", release, str(asset), "--repo", REPO,
                             "--title", f"Build {number}", "--notes", message], check=True)
         ipa_url = f"https://github.com/{REPO}/releases/download/{release}/VisionOR_App.ipa"
-        (ROOT / "manifests").mkdir(exist_ok=True)
         (ROOT / "manifests" / f"{number}.plist").write_bytes(
             manifest(ipa_url, bundle_id, version, f"Vision OR {version} ({number})"))
         builds.append({"number": number, "version": version, "message": message,
