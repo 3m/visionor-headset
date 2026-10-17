@@ -1,5 +1,19 @@
 [
   {
+    "number": 141,
+    "version": "3.1",
+    "message": "Center the status bar above the main window (#125)",
+    "date": "2026-10-17T16:21:27.753Z",
+    "commit": "c26f0b2"
+  },
+  {
+    "number": 139,
+    "version": "3.1",
+    "message": "Size the main window back up when the Show ends (#124)",
+    "date": "2026-10-17T16:09:31.965Z",
+    "commit": "999c624"
+  },
+  {
     "number": 136,
     "version": "3.1",
     "message": "Publish headset builds with the enterprise features on a public install page (#122)",
