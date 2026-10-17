@@ -1,5 +1,12 @@
 [
   {
+    "number": 150,
+    "version": "3.1",
+    "message": "Bundle the demo videos in headset builds (#129)",
+    "date": "2026-10-17T17:56:42.88Z",
+    "commit": "bc7233d"
+  },
+  {
     "number": 148,
     "version": "3.1",
     "message": "Keep the life-size OR to the room, out in front of the wearer (#128)",
