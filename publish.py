@@ -138,7 +138,10 @@ def main() -> None:
     published = {b["number"] for b in builds}
     token = asc_token()
     runs = asc(f"/ciWorkflows/{WORKFLOW_ID}/buildRuns?limit=20", token)["data"]
-    new = [r for r in runs if r["attributes"]["completionStatus"] == "SUCCEEDED"
+    # Runs end as failed, because the App Store export refuses the enterprise
+    # entitlements. The development export still succeeds, and check() vets it.
+    new = [r for r in runs if r["attributes"]["executionProgress"] == "COMPLETE"
+           and r["attributes"]["completionStatus"] in ("SUCCEEDED", "FAILED")
            and r["attributes"]["number"] not in published]
     for run in sorted(new, key=lambda r: r["attributes"]["number"]):
         attributes = run["attributes"]
