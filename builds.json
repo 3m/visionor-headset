@@ -1,5 +1,19 @@
 [
   {
+    "number": 171,
+    "version": "3.1",
+    "message": "Let the cockpit show the life-size OR's scenes around the wearer (#140)",
+    "date": "2026-11-07T11:53:32.152Z",
+    "commit": "da81b76"
+  },
+  {
+    "number": 169,
+    "version": "3.1",
+    "message": "Open the life-size OR beside the table, and let the wearer and iPad move it (#139)",
+    "date": "2026-11-07T11:46:09.889Z",
+    "commit": "1176c28"
+  },
+  {
     "number": 167,
     "version": "3.1",
     "message": "Take passthrough off the app, which App Store Connect refuses (#138)",
