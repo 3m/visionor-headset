@@ -1,5 +1,40 @@
 [
   {
+    "number": 166,
+    "version": "3.1",
+    "message": "Bring back headset builds, try passthrough on the app, and move the life-size window (#137)",
+    "date": "2026-11-07T05:05:39.837Z",
+    "commit": "047c31e"
+  },
+  {
+    "number": 163,
+    "version": "3.1",
+    "message": "Show the wearer's full view from Live, and drop Wearer's Eyes (#136)",
+    "date": "2026-11-07T04:46:08.263Z",
+    "commit": "b83864e"
+  },
+  {
+    "number": 159,
+    "version": "3.1",
+    "message": "Sign TestFlight builds with Headset Fit, Windows Follow and Full View passthrough (#134)",
+    "date": "2026-11-07T04:31:36.881Z",
+    "commit": "74864b6"
+  },
+  {
+    "number": 157,
+    "version": "3.1",
+    "message": "Add the enterprise camera purpose string so TestFlight takes visionOS builds (#133)",
+    "date": "2026-11-07T03:57:21.294Z",
+    "commit": "9502870"
+  },
+  {
+    "number": 155,
+    "version": "3.1",
+    "message": "Send the Room Camera through TestFlight and retire headset builds (#132)",
+    "date": "2026-11-07T03:43:51.584Z",
+    "commit": "b057850"
+  },
+  {
     "number": 153,
     "version": "3.1",
     "message": "Collapse the main window in the life-size OR (#131)",
