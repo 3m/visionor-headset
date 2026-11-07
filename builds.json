@@ -1,5 +1,12 @@
 [
   {
+    "number": 167,
+    "version": "3.1",
+    "message": "Take passthrough off the app, which App Store Connect refuses (#138)",
+    "date": "2026-11-07T05:23:08.178Z",
+    "commit": "c62b719"
+  },
+  {
     "number": 166,
     "version": "3.1",
     "message": "Bring back headset builds, try passthrough on the app, and move the life-size window (#137)",
