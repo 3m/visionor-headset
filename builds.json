@@ -1,5 +1,12 @@
 [
   {
+    "number": 176,
+    "version": "3.1",
+    "message": "Open the life-size OR from Scenes only on Open, and keep environments off the controls (#142)",
+    "date": "2026-11-07T14:14:49.174Z",
+    "commit": "cad7d2b"
+  },
+  {
     "number": 173,
     "version": "3.1",
     "message": "Keep the environment when the OR hides, and give it its own menu (#141)",
