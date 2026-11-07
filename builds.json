@@ -1,5 +1,12 @@
 [
   {
+    "number": 181,
+    "version": "3.1",
+    "message": "Pick Spatial Wall's environment from the Spatial tab (#145)",
+    "date": "2026-11-07T14:46:57.895Z",
+    "commit": "8262a02"
+  },
+  {
     "number": 176,
     "version": "3.1",
     "message": "Open the life-size OR from Scenes only on Open, and keep environments off the controls (#142)",
