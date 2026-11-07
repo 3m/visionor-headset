@@ -137,7 +137,9 @@ def main() -> None:
     builds = json.loads(BUILDS.read_text()) if BUILDS.exists() else []
     published = {b["number"] for b in builds}
     token = asc_token()
-    runs = asc(f"/ciWorkflows/{WORKFLOW_ID}/buildRuns?limit=20", token)["data"]
+    # Newest first. Unsorted, the API lists the oldest runs, so new ones
+    # never appear once the workflow has more than 20.
+    runs = asc(f"/ciWorkflows/{WORKFLOW_ID}/buildRuns?limit=20&sort=-number", token)["data"]
     # Runs end as failed, because the App Store export refuses the enterprise
     # entitlements. The development export still succeeds, and check() vets it.
     new = [r for r in runs if r["attributes"]["executionProgress"] == "COMPLETE"
